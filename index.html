@@ -1,0 +1,408 @@
+<!Doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="x-ua-compatible" content="ie=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#1a1466">
+  <meta name="description" content="Premier Schools Exhibition — Discover Gurugram's Top 30+ Schools at Apparel House, Sec 44, Gurugram on 2-3 August 2025.">
+  <title>Premier Schools Exhibition — Gurugram, 2-3 August 2025</title>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&family=Playfair+Display:ital,wght@1,500;1,600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <a class="skip-link" href="#main">Skip to main content</a>
+
+  <!-- Top bar -->
+  <header class="header">
+    
+    <div class="header__wrap">
+      <a class="header__brand" href="#" aria-label="Premier Schools Exhibition home">
+        <img src="premoerpng.png"
+             alt="Premier Schools Exhibition, 22nd Edition (by AFAIRS)"
+             class="header__logo" decoding="async">
+      </a>
+
+
+      <a href="#enquire" class="btn" aria-label="Register now for the exhibition">
+        <span class="btn__icon" aria-hidden="true">
+          <svg viewBox="0 0 24 24" width="16" height="16"><path d="M7 17 17 7M7 7h10v10" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+        </span>
+        <span class="btn__label">REGISTER NOW</span>
+      </a>
+    </div>
+  </header>
+
+  
+
+  <main id="main">
+
+    <!-- =====================================================
+         Hero — dual-axis slider
+         - Horizontal slider: 3 text variations (autoplay, swipe)
+         - Vertical: 3 image columns scrolling continuously
+         ===================================================== -->
+    <section class="hero" aria-label="Exhibition introduction">
+
+      <div class="hero__wrap">
+
+        <!-- Left: title slider (horizontal axis) -->
+        <div class="hero__left">
+          <div class="text-slider"
+               id="textSlider"  
+               role="region"
+               aria-roledescription="carousel"
+               aria-label="Hero highlights"
+               tabindex="0">
+
+            <div class="text-slider__track" id="textTrack">
+              <div class="text-slider__slide" role="group" aria-roledescription="slide" aria-label="Slide 1 of 3">
+                <h1 class="hero-title">
+                  <span class="hero-title__script">Discover Gurugram&rsquo;s</span>
+                  <span class="hero-title__main">Top 30+ Schools</span>
+                  <span class="hero-title__sub">ALL IN ONE PLACE</span>
+                </h1>
+
+                <div class="info-pill">
+                  <div class="info-pill__cell">
+                    <strong>Apparel House,</strong>
+                    <span>Sec 44, Gurugram</span>
+                  </div>
+                  <span class="info-pill__line" aria-hidden="true"></span>
+                  <div class="info-pill__cell">
+                    <strong>2&ndash;3 August 2025</strong>
+                    <span>Sat-Sun&nbsp;&nbsp;|&nbsp;&nbsp;10AM &ndash; 6PM</span>
+                  </div>
+                </div>
+              </div>
+
+              <div class="text-slider__slide" role="group" aria-roledescription="slide" aria-label="Slide 2 of 3">
+                <h2 class="hero-title">
+                  <span class="hero-title__script">Meet Principals &amp;</span>
+                  <span class="hero-title__main">School Heads</span>
+                  <span class="hero-title__sub">FACE-TO-FACE ON THE SPOT</span>
+                </h2>
+                <div class="info-pill">
+                  <div class="info-pill__cell">
+                    <strong>30+ Schools</strong>
+                    <span>Under one roof</span>
+                  </div>
+                  <span class="info-pill__line" aria-hidden="true"></span>
+                  <div class="info-pill__cell">
+                    <strong>Free Entry</strong>
+                    <span>Pre-register online</span>
+                  </div>
+                </div>
+              </div>
+
+              <div class="text-slider__slide" role="group" aria-roledescription="slide" aria-label="Slide 3 of 3">
+                <h2 class="hero-title">
+                  <span class="hero-title__script">Compare CBSE, ICSE,</span>
+                  <span class="hero-title__main">IB &amp; Cambridge</span>
+                  <span class="hero-title__sub">SIDE-BY-SIDE, EFFORTLESSLY</span>
+                </h2>
+                <div class="info-pill">
+                  <div class="info-pill__cell">
+                    <strong>Exclusive Offers</strong>
+                    <span>On admissions</span>
+                  </div>
+                  <span class="info-pill__line" aria-hidden="true"></span>
+                  <div class="info-pill__cell">
+                    <strong>Expert Counselling</strong>
+                    <span>Live, at the venue</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <!-- Carousel controls -->
+            <div class="text-slider__controls">
+              <button class="text-slider__arrow" type="button" id="prevSlide" aria-label="Previous slide">
+                <svg viewBox="0 0 24 24" width="18" height="18"><polyline points="15 6 9 12 15 18" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+              </button>
+              <div class="text-slider__dots" id="slideDots" role="tablist" aria-label="Choose slide"></div>
+              <button class="text-slider__arrow" type="button" id="nextSlide" aria-label="Next slide">
+                <svg viewBox="0 0 24 24" width="18" height="18"><polyline points="9 6 15 12 9 18" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+              </button>
+            </div>
+          </div>
+        </div>
+
+        <!-- Middle: vertical image scroller -->
+        <div class="hero__media"
+             id="vScroll"
+             role="img"
+             aria-label="Collage of school children in classrooms, sports, cycling and other activities">
+          <div class="v-col v-col--up">
+            <div class="v-col__track">
+              <!-- The same set is rendered twice so the loop is seamless. -->
+              <figure class="v-pill" style="background-image:url('https://images.pexels.com/photos/35128467/pexels-photo-35128467.jpeg?w=600')"></figure>
+              <figure class="v-pill" style="background-image:url('https://images.pexels.com/photos/35128474/pexels-photo-35128474.jpeg?w=600')"></figure>
+              <figure class="v-pill" style="background-image:url('https://images.unsplash.com/photo-1503676260728-1c00da094a0b?w=600&amp;q=80')"></figure>
+              <figure class="v-pill" style="background-image:url('https://images.pexels.com/photos/35128467/pexels-photo-35128467.jpeg?w=600')"></figure>
+              <figure class="v-pill" style="background-image:url('https://images.pexels.com/photos/35128474/pexels-photo-35128474.jpeg?w=600')"></figure>
+              <figure class="v-pill" style="background-image:url('https://images.unsplash.com/photo-1503676260728-1c00da094a0b?w=600&amp;q=80')"></figure>
+            </div>
+          </div>
+
+          <div class="v-col v-col--down">
+            <div class="v-col__track">
+              <figure class="v-pill" style="background-image:url('https://images.unsplash.com/photo-1595210382266-2d0077c1f541?w=600&amp;q=80')"></figure>
+              <figure class="v-pill" style="background-image:url('https://images.unsplash.com/photo-1569173675610-42c361a86e37?w=600&amp;q=80')"></figure>
+              <figure class="v-pill" style="background-image:url('https://images.pexels.com/photos/13739739/pexels-photo-13739739.jpeg?w=600')"></figure>
+              <figure class="v-pill" style="background-image:url('https://images.unsplash.com/photo-1595210382266-2d0077c1f541?w=600&amp;q=80')"></figure>
+              <figure class="v-pill" style="background-image:url('https://images.unsplash.com/photo-1569173675610-42c361a86e37?w=600&amp;q=80')"></figure>
+              <figure class="v-pill" style="background-image:url('https://images.pexels.com/photos/13739739/pexels-photo-13739739.jpeg?w=600')"></figure>
+            </div>
+          </div>
+
+          <div class="v-col v-col--up">
+            <div class="v-col__track">
+              <figure class="v-pill" style="background-image:url('https://images.pexels.com/photos/35017703/pexels-photo-35017703.jpeg?w=600')"></figure>
+              <figure class="v-pill" style="background-image:url('https://images.pexels.com/photos/11355176/pexels-photo-11355176.jpeg?w=600')"></figure>
+              <figure class="v-pill" style="background-image:url('https://images.unsplash.com/photo-1571260899304-425eee4c7efc?w=600&amp;q=80')"></figure>
+              <figure class="v-pill" style="background-image:url('https://images.pexels.com/photos/35017703/pexels-photo-35017703.jpeg?w=600')"></figure>
+              <figure class="v-pill" style="background-image:url('https://images.pexels.com/photos/11355176/pexels-photo-11355176.jpeg?w=600')"></figure>
+              <figure class="v-pill" style="background-image:url('https://images.unsplash.com/photo-1571260899304-425eee4c7efc?w=600&amp;q=80')"></figure>
+            </div>
+          </div>
+        </div>
+
+        <!-- Right: enquire form -->
+        <section class="enquire" id="enquire" aria-labelledby="enquireTitle">
+          <h2 class="enquire__title" id="enquireTitle">Enquire Now</h2>
+          <form class="enquire__form" id="enquireForm" novalidate>
+            <div class="field">
+              <input class="field__input" type="text" id="f-name" name="name" placeholder=" " autocomplete="name" required>
+              <label class="field__label" for="f-name">Parent&rsquo;s Name</label>
+            </div>
+            <div class="field">
+              <input class="field__input" type="tel" id="f-phone" name="phone" placeholder=" " autocomplete="tel" pattern="[0-9+\s\-]{7,15}" required>
+              <label class="field__label" for="f-phone">Phone number</label>
+            </div>
+            <div class="field">
+              <select class="field__input field__input--select" id="f-grade" name="grade" required>
+                <option value="" hidden selected></option>
+                <option>Pre-Nursery / Nursery</option>
+                <option>Grade 1 – 5</option>
+                <option>Grade 6 – 8</option>
+                <option>Grade 9 – 10</option>
+                <option>Grade 11 – 12</option>
+              </select>
+              <label class="field__label" for="f-grade">Which grade are you looking for?</label>
+            </div>
+
+            <button class="btn btn--solid" type="submit">
+              <span class="btn__icon" aria-hidden="true">
+                <svg viewBox="0 0 24 24" width="16" height="16"><path d="M7 17 17 7M7 7h10v10" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+              </span>
+              <span class="btn__label">SUBMIT</span>
+            </button>
+            <p class="enquire__msg" id="enquireMsg" role="status" aria-live="polite"></p>
+          </form>
+        </section>
+      </div>
+    </section>
+
+
+    <!-- Trust stats -->
+    <section class="stats" aria-label="Trust statistics">
+      <ul class="stats__list">
+        <li class="stat">
+          <span class="stat__leaf stat__leaf--l" aria-hidden="true"></span>
+          <span class="stat__body">
+            <span class="stat__cap">Trusted by</span>
+            <strong class="stat__val">1 Million+</strong>
+            <span class="stat__cap">Parents</span>
+          </span>
+          <span class="stat__leaf stat__leaf--r" aria-hidden="true"></span>
+        </li>
+        <li class="stat">
+          <span class="stat__leaf stat__leaf--l" aria-hidden="true"></span>
+          <span class="stat__body">
+            <strong class="stat__val">22+ <small>Years</small></strong>
+            <span class="stat__cap">of Legacy</span>
+          </span>
+          <span class="stat__leaf stat__leaf--r" aria-hidden="true"></span>
+        </li>
+        <li class="stat">
+          <span class="stat__leaf stat__leaf--l" aria-hidden="true"></span>
+          <span class="stat__body">
+            <strong class="stat__val">500+</strong>
+            <span class="stat__cap">Participating Schools</span>
+          </span>
+          <span class="stat__leaf stat__leaf--r" aria-hidden="true"></span>
+        </li>
+        <li class="stat">
+          <span class="stat__leaf stat__leaf--l" aria-hidden="true"></span>
+          <span class="stat__body">
+            <strong class="stat__val">17 Cities</strong>
+            <span class="stat__cap">Across the Globe</span>
+          </span>
+          <span class="stat__leaf stat__leaf--r" aria-hidden="true"></span>
+        </li>
+      </ul>
+    </section>
+
+
+    <!-- Participating school logos (horizontal sling, two rows in opposite directions) -->
+    <section class="schools" aria-labelledby="schoolsTitle">
+      <h2 class="section-title" id="schoolsTitle">Participating Schools</h2>
+
+      <div class="sling" aria-label="School logos scrolling left">
+        <div class="sling__track sling__track--left" id="slingTop"></div>
+      </div>
+      <div class="sling" aria-label="School logos scrolling right">
+        <div class="sling__track sling__track--right" id="slingBot"></div>
+      </div>
+    </section>
+
+
+    <!-- Choose the school — 4 cards on desktop, swipe slider on mobile -->
+    <section class="choose" aria-labelledby="chooseTitle">
+      <h2 class="section-title" id="chooseTitle">Choose the School That Fits You Best</h2>
+
+      <div class="choose__viewport">
+        <ul class="choose__grid" id="chooseGrid">
+          <li class="card" tabindex="0">
+            <div class="card__media" style="background-image:url('scholl-imges/child-img3.png')" aria-hidden="true"></div>
+            <div class="card__shade"></div>
+            <div class="card__body">
+              <h3 class="card__title">Pre-Schools &amp; Early Learning Centres</h3>
+              <p class="card__text">Nurturing foundational skills for toddlers and pre-primary children.</p>
+            </div>
+          </li>
+          <li class="card" tabindex="0">
+            <div class="card__media" style="background-image:url('scholl-imges/child-img4.jpg')" aria-hidden="true"></div>
+            <div class="card__shade"></div>
+            <div class="card__body">
+              <h3 class="card__title">K-12 CBSE Day Schools</h3>
+              <p class="card__text">Reputed schools offering complete schooling from Kindergarten to Grade 12.</p>
+            </div>
+          </li>
+          <li class="card" tabindex="0">
+            <div class="card__media" style="background-image:url('scholl-imges/child-img2.png')" aria-hidden="true"></div>
+            <div class="card__shade"></div>
+            <div class="card__body">
+              <h3 class="card__title">Heritage to New-Age Schools</h3>
+              <p class="card__text">Time-tested institutions to innovative, tech-enabled, future-ready campuses.</p>
+            </div>
+          </li>
+          <li class="card" tabindex="0">
+            <div class="card__media" style="background-image:url('scholl-imges/child-img1.png')" aria-hidden="true"></div>
+            <div class="card__shade"></div>
+            <div class="card__body">
+              <h3 class="card__title">International Curriculum Schools</h3>
+              <p class="card__text">Offering IB, Cambridge, Finnish and other global curricula in a world-class setting.</p>
+            </div>
+          </li>
+        </ul>
+      </div>
+
+      <div class="choose__dots" id="chooseDots" role="tablist" aria-label="School category controls"></div>
+    </section>
+
+
+    <!-- Pre-schedule banner -->
+    <section class="book" aria-labelledby="bookTitle">
+      <div class="book__inner">
+        <div class="book__text">
+          <p class="book__kicker">Exciting Opportunities for Parents!</p>
+          <h2 class="book__title" id="bookTitle">Pre-schedule Your<br>School Appointments</h2>
+          <p class="book__sub">To Avoid Rush</p>
+          <a class="btn book__cta" href="#enquire">
+            <span class="btn__icon" aria-hidden="true">
+              <svg viewBox="0 0 24 24" width="16" height="16"><path d="M7 17 17 7M7 7h10v10" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+            </span>
+            <span class="btn__label">PRE-SCHEDULE NOW</span>
+          </a>
+        </div>
+        <div class="book__media" role="img" aria-label="Parents discussing admissions with a school representative at the exhibition"></div>
+      </div>
+    </section>
+
+
+    <!-- Exhibition highlights slider -->
+    <section class="highlights" aria-labelledby="highlightsTitle">
+      <h2 class="section-title section-title--light" id="highlightsTitle">What Makes This Exhibition a Must-Visit</h2>
+
+      <div class="hi-slider" id="hiSlider" role="region" aria-roledescription="carousel" aria-label="Exhibition highlights" tabindex="0">
+        <div class="hi-slider__track" id="hiTrack"></div>
+      </div>
+
+      <div class="hi-slider__nav">
+        <button class="round-btn" type="button" id="hiPrev" aria-label="Previous highlight">
+          <svg viewBox="0 0 24 24" width="22" height="22"><path d="M19 12H5m7-7-7 7 7 7" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+        </button>
+        <button class="round-btn round-btn--solid" type="button" id="hiNext" aria-label="Next highlight">
+          <svg viewBox="0 0 24 24" width="22" height="22"><path d="M5 12h14m-7-7 7 7-7 7" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+        </button>
+      </div>
+
+      <div class="highlights__wave" aria-hidden="true"></div>
+    </section>
+
+  </main>
+
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="footer__wrap">
+      <div class="footer__brand">
+        <img src="/premoerpng.png"
+             alt="Premier Schools Exhibition"
+             class="footer__logo"
+             width="78" height="78" decoding="async">
+      </div>
+
+      <address class="footer__col">
+        <span class="footer__icon" aria-hidden="true">
+          <svg viewBox="0 0 24 24" width="18" height="18"><path d="M21 10c0 7-9 13-9 13S3 17 3 10a9 9 0 1 1 18 0z" fill="none" stroke="currentColor" stroke-width="2"/><circle cx="12" cy="10" r="3" fill="none" stroke="currentColor" stroke-width="2"/></svg>
+        </span>
+        <div>
+          <strong>Corporate Office:</strong>
+          <p>Suite B-5, Ballygunge Park Tower,<br>67B Ballygunge Circular Road,<br>Kolkata - 700019</p>
+        </div>
+      </address>
+
+      <address class="footer__col">
+        <span class="footer__icon" aria-hidden="true">
+          <svg viewBox="0 0 24 24" width="18" height="18"><path d="M21 10c0 7-9 13-9 13S3 17 3 10a9 9 0 1 1 18 0z" fill="none" stroke="currentColor" stroke-width="2"/><circle cx="12" cy="10" r="3" fill="none" stroke="currentColor" stroke-width="2"/></svg>
+        </span>
+        <div>
+          <strong>Ahmedabad Office:</strong>
+          <p>12/AA, Swastik Chambers, Near CU<br>Shah College, Ashram Road,<br>Ahmedabad - 380009</p>
+        </div>
+      </address>
+
+      <div class="footer__col">
+        <span class="footer__icon" aria-hidden="true">
+          <svg viewBox="0 0 24 24" width="18" height="18"><path d="M22 16.92v3a2 2 0 0 1-2.18 2A19.79 19.79 0 0 1 11.19 19a19.5 19.5 0 0 1-6-6A19.79 19.79 0 0 1 2.12 4.18 2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z" fill="none" stroke="currentColor" stroke-width="2"/></svg>
+        </span>
+        <div>
+          <strong>Call us on</strong>
+          <p><a href="tel:9674805912">9674805912</a><br><a href="tel:9674585012">9674585012</a></p>
+        </div>
+      </div>
+
+      <div class="footer__col">
+        <strong>Follow us on</strong>
+        <ul class="footer__social">
+          <li><a href="#" aria-label="Instagram"><svg viewBox="0 0 24 24" width="18" height="18"><rect x="2" y="2" width="20" height="20" rx="5" fill="none" stroke="currentColor" stroke-width="2"/><circle cx="12" cy="12" r="4" fill="none" stroke="currentColor" stroke-width="2"/><circle cx="17.5" cy="6.5" r="1" fill="currentColor"/></svg></a></li>
+          <li><a href="#" aria-label="Facebook"><svg viewBox="0 0 24 24" width="18" height="18"><path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z" fill="none" stroke="currentColor" stroke-width="2" stroke-linejoin="round"/></svg></a></li>
+          <li><a href="#" aria-label="YouTube"><svg viewBox="0 0 24 24" width="18" height="18"><rect x="2" y="5" width="20" height="14" rx="3" fill="none" stroke="currentColor" stroke-width="2"/><polygon points="10 9 16 12 10 15" fill="currentColor"/></svg></a></li>
+        </ul>
+      </div>
+    </div>
+
+    <p class="footer__copy">&copy; 2025 Premier Schools Exhibition. All rights reserved.</p>
+  </footer>
+
+  <script src="/script.js" defer></script>
+</body>
+</html>
+
